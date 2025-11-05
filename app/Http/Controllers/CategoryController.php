@@ -18,7 +18,7 @@ class CategoryController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:100',
-            'color' => 'nullable|string|max:7', // Example: #FF5733
+            'color' => 'nullable|string|max:7',
         ]);
 
         $category = Category::create([
